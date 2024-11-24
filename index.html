@@ -1,12 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>閱讀心得 - 我的城市馬</title>
+    <style>
+        /* 基本樣式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .citymap {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .citymap img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+        }
+
+        .book-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .book-list li {
+            background: #e8f5e9;
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-left: 5px solid #4caf50;
+            border-radius: 5px;
+        }
+
+        .book-list li h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .book-list li p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Page!</h1>
-    <p>This is my first website hosted on GitHub Pages.</p>
+    <header>
+        <h1>閱讀心得 - 我的城市馬</h1>
+    </header>
+
+    <div class="container">
+        <section class="citymap">
+            <h2>城市馬地圖</h2>
+            <img src="citymap-placeholder.jpg" alt="城市馬地圖" />
+            <p>這是我的城市馬，用於記錄每一本書和心得的地點。</p>
+        </section>
+
+        <section class="reading-notes">
+            <h2>閱讀心得列表</h2>
+            <ul class="book-list">
+                <li>
+                    <h3>《我們為什麼對好事麻木、對壞事容忍》</h3>
+                    <p>心得：這本書探討了人性對於好與壞的反應，讓我思考如何更積極面對生活中的事物。</p>
+                </li>
+                <li>
+                    <h3>《快樂錢》</h3>
+                    <p>心得：透過這本書，我了解到花錢在體驗上的價值，如何讓生活更有意義。</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 我的城市馬 - 記錄每一本書的點滴
+    </footer>
 </body>
 </html>
