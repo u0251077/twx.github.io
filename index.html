@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website</title>
+    <title>優化後的網站</title>
     <style>
         /* 基本樣式 */
         body {
@@ -12,6 +12,7 @@
             padding: 0;
             background-color: #f0f8ff;
             color: #333;
+            line-height: 1.6;
         }
 
         header {
@@ -19,49 +20,50 @@
             color: white;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .container {
             width: 90%;
             max-width: 800px;
             margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         h1, h2 {
             text-align: center;
+            color: #4caf50;
         }
 
-        .citymap {
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        .citymap img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #4caf50;
-            border-radius: 10px;
-        }
-
-        .book-list {
+        .data-list {
             list-style: none;
             padding: 0;
         }
 
-        .book-list li {
+        .data-list li {
             background: #e8f5e9;
             margin: 10px 0;
-            padding: 10px 15px;
+            padding: 15px;
             border-left: 5px solid #4caf50;
             border-radius: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .book-list li h3 {
+        .data-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .data-list li h3 {
             margin: 0;
             color: #333;
+            font-size: 18px;
         }
 
-        .book-list li p {
+        .data-list li p {
             margin: 5px 0 0;
             font-size: 14px;
             color: #555;
@@ -73,18 +75,56 @@
             font-size: 14px;
             color: #666;
         }
+
+        /* 響應式設計 */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            .data-list li {
+                padding: 10px;
+            }
+
+            .data-list li h3 {
+                font-size: 16px;
+            }
+
+            .data-list li p {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
+        <h1>優化後的網站</h1>
     </header>
 
     <div class="container">
-        3000u-2.63</br>
-        500u-2.61</br>
-        1000u-2.6</br>
-        1000u-2.57</br>
-        500u-2.52</br>
+        <h2>數據列表</h2>
+        <ul class="data-list">
+            <li>
+                <h3>3000u - 2.63</h3>
+            </li>
+            <li>
+                <h3>500u - 2.61</h3>
+            </li>
+            <li>
+                <h3>1000u - 2.6</h3>
+            </li>
+            <li>
+                <h3>1000u - 2.57</h3>
+            </li>
+            <li>
+                <h3>500u - 2.52</h3>
+            </li>
+        </ul>
     </div>
+
+    <footer>
+        <p>&copy; 2023 優化後的網站. 保留所有權利.</p>
+    </footer>
 </body>
 </html>
